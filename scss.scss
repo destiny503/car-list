@@ -1,0 +1,75 @@
+* {
+	vertical-align: baseline;
+	box-sizing: border-box;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(40, 40, 40);
+	color: whitesmoke;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	border: 2px solid rgb(100, 100, 100);
+}
+
+.brand {
+	width: 400px;
+	margin: 10px;
+	border: 2px solid rgb(100, 100, 100);
+
+	&__name {
+		display: flex;
+		margin: 10px;
+		justify-content: center;
+		text-transform: uppercase;
+		border: 2px solid rgb(100, 100, 100);
+	}
+
+	&__products {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		border: 2px solid rgb(100, 100, 100);
+	}
+
+	&__product {
+		display: flex;
+		flex-direction: column;
+		margin: 10px 10px 0 10px;
+		justify-content: center;
+		border: 2px solid rgb(100, 100, 100);
+	}
+
+	&__product:last-child {
+		margin-bottom: 10px;
+	}
+
+	&__price {
+		display: flex;
+		margin: 10px;
+		justify-content: center;
+		border: 2px solid rgb(100, 100, 100);
+	}
+
+	&__list {
+		list-style: none;
+		margin: 0 10px 10px 10px;
+		border: 2px solid rgb(100, 100, 100);
+	}
+
+	&__car {
+		margin: 5px;
+	}
+}
