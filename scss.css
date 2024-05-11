@@ -18,14 +18,32 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
   margin: 10px;
   border: 2px solid rgb(100, 100, 100);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date {
+  margin: 10px;
+  border: 2px solid rgb(63, 115, 64);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 32px auto;
+}
+.date__number {
+  text-align: center;
+  margin: 10px 10px 0 10px;
+  grid-column: span 2;
+  border: 2px solid rgb(63, 115, 64);
+}
+
+.date:first-child {
+  margin: 10px 0px 10px 10px;
 }
 
 .brand {
-  width: 400px;
+  width: 379px;
   margin: 10px;
   border: 2px solid rgb(100, 100, 100);
 }
@@ -65,4 +83,8 @@ body {
 }
 .brand__car {
   margin: 5px;
+}
+
+.brand:last-child {
+  margin-left: 0px;
 }
