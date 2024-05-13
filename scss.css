@@ -22,6 +22,7 @@ body {
   border: 2px solid rgb(100, 100, 100);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .date {
@@ -38,12 +39,17 @@ body {
   border: 2px solid rgb(63, 115, 64);
 }
 
+@media (max-width: 1360px) {
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .date:first-child {
   margin: 10px 0px 10px 10px;
 }
 
 .brand {
-  width: 379px;
   margin: 10px;
   border: 2px solid rgb(100, 100, 100);
 }
